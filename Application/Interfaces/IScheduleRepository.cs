@@ -6,6 +6,6 @@ namespace Barberia.Backend.Application.Interfaces
     {
         Task<Schedule?> GetByIdAsync(int id);
 
-        Task<List<Schedule>> GetActiveByBarberAndDateAsync(int BarberId, DateOnly WorkDate);
+        Task<List<Schedule>> GetActiveByBarberAndWorkDateAsync(int barberId, DateOnly workDate);
     }
 }
